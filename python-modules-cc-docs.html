@@ -1,0 +1,57 @@
+<hr>
+<p>Title: &#39;Modules&#39;
+Description: &#39;A module is a Python file that contains functions, definitions, and statements that can be included in an application.&#39;
+Subjects:</p>
+<ul>
+<li>&#39;Computer Science&#39;</li>
+<li>&#39;Data Science&#39;
+Tags:</li>
+<li>&#39;Libraries&#39;</li>
+<li>&#39;Modules&#39;</li>
+<li>&#39;Scope&#39;
+CatalogContent:</li>
+<li>&#39;learn-python-3&#39;</li>
+<li>&#39;paths/computer-science&#39;</li>
+</ul>
+<hr>
+<p>A <strong>module</strong> is a Python file that contains functions, definitions, and statements that can be included in other files within an application. Technically, all files with the <code>.py</code> <a href="https://www.codecademy.com/resources/docs/general/file-formats">format</a> are modules.</p>
+<p>Conceptually, modules are named units of code that can be reused across applications and allows us to access shared libraries (collections of modules) and packages (modules with nested modules and packages). Instead of entering commands directly into a Python interpreter, code can be saved as a module for later use in other applications.</p>
+<h2 id="creating-and-importing-modules">Creating and Importing Modules</h2>
+<p>A module can be created by saving a Python file with the <code>.py</code> file extension. It can then be imported into another <code>.py</code> file with an <code>import</code> statement.</p>
+<p>For example, a separate <code>video_player.py</code> file that was previously saved can be imported in other files:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> video_player
+
+# Rest <span class="hljs-keyword">of</span> the program starts here...
+</code></pre>
+<p>The program now has access to all functions, objects, and statements contained within the <code>video_player</code> module.</p>
+<h2 id="importing-specific-resources">Importing Specific Resources</h2>
+<p>Instead of importing the whole module, individually named resources can be specified. For example:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> video_player <span class="hljs-keyword">import</span> VideoPlayer
+</code></pre>
+<p>This will import only the <code>VideoPlayer</code> class from a given <code>video_player</code> module, rather than all types of collections contained within it.</p>
+<p>It&#39;s often useful to import only what is needed to avoid slowing the program down and polluting the local namespace where the code runs.</p>
+<h2 id="namespaces-and-scope">Namespaces and Scope</h2>
+<p>A module within our local namespace can be renamed by creating an alias using the <code>as</code> keyword. For example:</p>
+<pre><code class="lang-py"><span class="hljs-symbol">from</span> <span class="hljs-keyword">bs4 </span><span class="hljs-meta">import</span> <span class="hljs-keyword">BeautifulSoup </span>as <span class="hljs-keyword">bs</span>
+</code></pre>
+<p>Aliasing is especially convenient for shortening module names and managing the local namespace where our code executes.</p>
+<p>Once a module is imported, it is within the scope of the program and it can be accessed in the local namespace.</p>
+<h2 id="python-standard-modules">Python Standard Modules</h2>
+<p>Python comes with several different built-in modules that provide a variety of functions. They include:</p>
+<ul>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/collections-module"><code>collections</code></a> module provides additional collection types.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/functools-module"><code>functools</code></a> module provides functions supporting a <a href="https://www.codecademy.com/resources/docs/general/programming-paradigms/functional-programming">functional programming</a> approach.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/glob-module"><code>glob</code></a> module allows matching file paths per <a href="https://www.codecademy.com/resources/docs/general/unix">Unix</a> shell rules.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/json-module"><code>json</code></a> module provides functions for dealing with <a href="https://www.codecademy.com/resources/docs/general/json">JSON</a> objects.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/math-module"><code>math</code></a> module provides useful mathematical functions.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/random-module"><code>random</code></a> module provides functions for dealing with random numbers.</li>
+<li>The <a href="https://www.codecademy.com/resources/docs/python/time-module"><code>time</code></a> module provides various functions for dealing with time.</li>
+</ul>
+<h2 id="python-third-party-modules">Python Third-Party Modules</h2>
+<p>Python has a very broad selection of third-party modules that are devoted to particular tasks.</p>
+<p>These are third-party Python modules that have topic entries:</p>
+<ul>
+<li><a href="https://www.codecademy.com/resources/docs/numpy">NumPy</a>: a popular open-source Python library used for complex mathematical operations and multi-dimensional <a href="https://www.codecademy.com/resources/docs/general/data-structures/array">arrays</a>.</li>
+<li><a href="https://www.codecademy.com/resources/docs/pandas">Pandas</a>: a popular open-source Python module used for data analysis and manipulation.</li>
+</ul>
+<p>Below is a selection of other third-party modules of note:</p>

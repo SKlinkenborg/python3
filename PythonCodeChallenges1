@@ -1,0 +1,39 @@
+Python Code Challenges: Control Flow
+
+Python Code Challenges involving Control Flow
+
+This article will help you review Python control flow and functions by providing some code challenges.
+
+Some of these challenges are difficult! Take some time to think about them before starting to code.
+
+You might not get the solution correct on your first try — look at your output, try to find where you’re going wrong, and iterate on your solution.
+
+Finally, if you get stuck, use our solution code! If you “Check Answer” twice with an incorrect solution, you should see an option to get our solution code. However, truly investigate that solution — experiment and play with the solution code until you have a good grasp of how it is working. Good luck!
+Function Syntax
+
+As a refresher, function syntax looks like this:
+
+def some_function(some_input1, some_input2):
+  # … do something with the inputs …
+  return output
+
+For example, a function that returns the sum of the first and last elements of a given list might look like this:
+
+def first_plus_last(lst):
+  return lst[0] + lst[-1]
+
+And this would produce output like:
+
+>>> first_plus_last([1, 2, 3, 4])
+5
+>>> first_plus_last([8, 2, 5, -8])
+0
+>>> first_plus_last([-10, 2, 3, -4])
+-14
+
+Challenges
+
+We’ve included 5 challenges below. Try to answer all of them and polish up your problem-solving skills and your control flow expertise.
+1. Not Sum To Ten
+
+To start, let’s check if the summation of two values does NOT equal ten.
