@@ -1,6 +1,2 @@
 # has it own github project, don't want to cross streams (so to speak)
 wheresTheWeef
-
-# Jupyter Notebooks
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
