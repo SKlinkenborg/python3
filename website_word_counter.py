@@ -4,7 +4,6 @@ import requests as r
 import re
 from bs4 import BeautifulSoup as bs
 
-PAGE_URL = 'http://wikipedia.org'
 # basic requests get request syntax w/ error checking for non-200 responses
 def grab_page(url):
     resp = r.get(url)
@@ -48,12 +47,13 @@ def get_all_words_from(url):
     return re.findall(r'\w+', raw_text)
 
 # sort words by most common
-def get_top_words_from(all_words):
+def get_top_words_from(url):
+    all_words = get_all_words_from(url)
     occurrences = count_occurences_in(all_words)
     return sorted(occurrences.items(), key=lambda item: item[1], reverse=True)
 
-all_words = get_all_words_from(PAGE_URL)
-top_words = get_top_words_from(all_words)
+
+top_words = get_top_words_from("http://83.136.249.246:35075/")
 
 for i in range(10):
     print(top_words[i][0])
