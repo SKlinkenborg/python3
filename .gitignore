@@ -1,4 +1,5 @@
 # has it own github project, don't want to cross streams (so to speak)
+# or otherwise shouldn't be shared
 wheresTheWeef
 htb-python-beautifulsoup4.md
 htb-python-libraries.md
@@ -9,3 +10,4 @@ htb-python-requests.md
 htb-python3-classes.md
 htb-python3-functions.md
 htb-python3.md
+htb-python3-bind_shell.md
